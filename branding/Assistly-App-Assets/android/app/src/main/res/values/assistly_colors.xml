@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="assistly_blue">#4B88FD</color>
+    <color name="assistly_green">#22D214</color>
+    <color name="assistly_background_light">#FFFFFF</color>
+    <color name="assistly_background_dark">#152237</color>
+</resources>

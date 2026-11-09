@@ -1,0 +1,47 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Tutorials Collection
+    match /tutorials/{tutorialId} {
+      // User must be logged in. Owner can read/write. Recipients can read.
+      allow read: if request.auth != null && (
+        request.auth.uid == resource.data.owner ||
+        request.auth.uid in resource.data.recipients
+      );
+
+      // Only the owner can update or delete
+      allow update, delete: if request.auth != null &&
+        request.auth.uid == resource.data.owner;
+
+      // Creating requires setting yourself as owner
+      allow create: if request.auth != null &&
+        request.auth.uid == request.resource.data.owner;
+    }
+
+    // Invitations Collection (managed by Cloud Functions, users shouldn't read directly)
+    match /invitations/{tokenId} {
+      allow read, write: if false; // Only accessible via Admin SDK in Cloud Functions
+    }
+
+    // Users Collection (Categories, Favorites, Notifications)
+    match /users/{userId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+
+      match /categories/{categoryId} {
+        allow read, write: if request.auth != null && request.auth.uid == userId;
+      }
+
+      match /favorites/{tutorialId} {
+        allow read, write: if request.auth != null && request.auth.uid == userId;
+      }
+
+      match /notifications/{notificationId} {
+        // Users can read their own notifications and mark them as read
+        allow read, update, delete: if request.auth != null && request.auth.uid == userId;
+        // Creation happens via Cloud Functions (invitations)
+        allow create: if false;
+      }
+    }
+  }
+}

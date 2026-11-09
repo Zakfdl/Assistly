@@ -1,0 +1,15 @@
+﻿.gradle/
+build/
+app/build/
+.idea/
+local.properties
+*.apk
+*.aab
+*.iml
+node_modules/
+firebase-backend/node_modules/
+.firebase/
+.env
+.env.*
+*service-account*.json
+*adminsdk*.json

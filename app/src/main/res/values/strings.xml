@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Assistly</string>
+    <string name="invite_domain" translatable="false">assistly.androidplatform.net</string>
+    <string name="google_cloud_project_number" translatable="false">1234567890</string>
+    <string name="default_web_client_id" translatable="false">dummy-client-id.apps.googleusercontent.com</string>
+    <string name="error_mic_permission">Please allow microphone access to record explanation</string>
+    <string name="error_attach_file">Could not attach file</string>
+    <string name="error_invalid_file">The app did not return a valid file; try selecting from files</string>
+    <string name="confirm_title">Confirm</string>
+    <string name="yes">Yes</string>
+    <string name="cancel">Cancel</string>
+    <string name="error_finish_current">Finish the current operation first</string>
+    <string name="error_open_camera_files">Could not open camera or files. Try selecting from device</string>
+    <string name="error_start_recording">Could not start recording. Check microphone permission</string>
+    <string name="error_recording_short">Recording is too short or incomplete. Try again</string>
+    <string name="audio_explanation_filename">Voice_Explanation.m4a</string>
+    <string name="error_save_recording">Could not save recording</string>
+    <string name="error_read_lessons">Could not read saved lessons. Your data was not replaced</string>
+    <string name="error_save_lesson">Could not save lesson</string>
+    <string name="error_migrate_legacy">Could not migrate legacy lessons. Original data is kept and not replaced</string>
+    <string name="error_migrate_legacy_toast">Could not migrate legacy lessons; original data kept</string>
+    <string name="open_attachment_with">Open attachment with</string>
+    <string name="error_open_attachment">Could not open attachment. Check if a suitable app is installed</string>
+    <string name="prompt_voice_search">Speak now to search for a lesson</string>
+    <string name="error_voice_search_unavailable">Voice search is not available on this device</string>
+</resources>

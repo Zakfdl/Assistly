@@ -1,0 +1,13 @@
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    match /tutorials/{tutorialId}/{fileName} {
+      allow read: if request.auth != null && (
+        request.auth.uid == firestore.get(/databases/(default)/documents/tutorials/$(tutorialId)).data.owner ||
+        request.auth.uid in firestore.get(/databases/(default)/documents/tutorials/$(tutorialId)).data.recipients
+      );
+      allow write: if request.auth != null &&
+        request.auth.uid == firestore.get(/databases/(default)/documents/tutorials/$(tutorialId)).data.owner;
+    }
+  }
+}

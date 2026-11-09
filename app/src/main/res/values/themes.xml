@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Assistly" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/assistly_blue</item>
+        <item name="colorPrimaryDark">@color/assistly_blue</item>
+        <item name="colorAccent">@color/assistly_green</item>
+        <item name="android:windowBackground">@drawable/splash_background</item>
+    </style>
+</resources>

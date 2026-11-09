@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Assistly</string>
+    <string name="error_mic_permission">اسمح باستخدام الميكروفون لتسجيل الشرح</string>
+    <string name="error_attach_file">تعذّر إرفاق الملف</string>
+    <string name="error_invalid_file">لم يُرجع التطبيق ملفاً صالحاً؛ جرّب الاختيار من الملفات</string>
+    <string name="confirm_title">تأكيد</string>
+    <string name="yes">نعم</string>
+    <string name="cancel">إلغاء</string>
+    <string name="error_finish_current">أنهِ العملية الحالية أولاً</string>
+    <string name="error_open_camera_files">تعذّر فتح الكاميرا أو الملفات. جرّب الاختيار من الجهاز</string>
+    <string name="error_start_recording">تعذّر بدء التسجيل. تحقق من صلاحية الميكروفون</string>
+    <string name="error_recording_short">التسجيل قصير جداً أو لم يكتمل. أعد المحاولة</string>
+    <string name="audio_explanation_filename">شرح صوتي.m4a</string>
+    <string name="error_save_recording">تعذّر حفظ التسجيل</string>
+    <string name="error_read_lessons">تعذّر قراءة الدروس المحفوظة. لم تُستبدل بياناتك</string>
+    <string name="error_save_lesson">تعذّر حفظ الدرس</string>
+    <string name="error_migrate_legacy">تعذّر نقل الدروس القديمة. النسخة الأصلية محفوظة ولم تُستبدل</string>
+    <string name="error_migrate_legacy_toast">تعذّر نقل الدروس القديمة؛ النسخة الأصلية محفوظة</string>
+    <string name="open_attachment_with">فتح المرفق باستخدام</string>
+    <string name="error_open_attachment">تعذّر فتح المرفق. تحقق من وجود تطبيق مناسب لنوعه</string>
+    <string name="prompt_voice_search">تحدث الآن للبحث عن الدرس</string>
+    <string name="error_voice_search_unavailable">البحث الصوتي غير متاح على هذا الجهاز</string>
+</resources>
